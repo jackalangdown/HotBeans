@@ -1,0 +1,460 @@
+/* Font Familes */
+
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+/*Font Family End */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* scrollbar end */
+
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+.jobs-img-header {
+  background-image: url("../imgs/openpositions1.jpg");
+  height: 45%;
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  margin-top: 0;
+}
+
+.team-img-header {
+  background-image: url("../imgs/Ourteam1.jpg");
+  height: 45%;
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  margin-top: 0;
+}
+
+.abt-img-header {
+  background-image: url("../imgs/aboutus1.jpg");
+  height: 45%;
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  margin-top: 0;
+}
+
+.head-txt {
+  position: absolute;
+  color: #f5EDDA;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  text-align: center;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 30px;
+  text-shadow: -1px 5px 6px #2B130B;
+}
+
+.page-logo {
+
+  left: 4%;
+  position: absolute;
+  top: 2%;   
+  width: 200px;
+  height: 200px; 
+}
+
+  .bg-image {
+    background-image: url("../imgs/homepage1.jpg");  
+    height: 100%;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .home-text {
+    position: absolute;
+    color: #f5EDDA;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 30px;
+  }
+  .home-text a {
+    margin-top: -20px;
+
+  }
+  .typewrite {
+      color: #98694f;
+  }
+
+.logo {
+
+    left: 4%;
+    position: absolute;
+    top: 2%;   
+    width: 200px;
+    height: 200px; 
+}
+
+  .topnav {
+    overflow: hidden;
+    position: absolute;
+    margin: 20px;
+    width: auto;
+    top: 2%;
+    right: 3%;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f5EDDA;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 24px;
+    position: relative;
+    text-shadow: -1px 5px 6px #2B130B;
+
+    font-family: Arial;
+
+  }
+  
+  .topnav a:hover {
+    color: #f5EDDA;
+  } 
+
+
+div.topnav a:before, div.topnav a:after
+{
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 3px;
+    content: '';
+    background: #ca9e7b;
+    transition: all 0.3s;
+}
+
+
+div.topnav a:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+div.topnav a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+div.topnav a:hover:before, div.topnav a:hover:after
+{
+    opacity: 1;
+    width: 100%;
+}
+
+/* Job Application Section */
+.jobs-body {
+  font-family: Arial;
+  width: 100%;
+  margin: 0;
+}
+.jobs-body hr {
+  width: 20%;
+}
+.jobs-body h1 {
+  margin-bottom: -5px;
+}
+.jobs-col {
+    float: left;
+    width: 50%;
+    padding: 0 10px;  
+}
+.jobs-row {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.jobs-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.jobs-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+  padding: 16px;
+  background-color: #f1f1f1;
+  padding-bottom: 80px;
+}
+
+.jobs-card h2 {
+  margin-top: -4px;
+}
+.jobs-card h4 {
+  margin-top: -10px;
+}
+
+
+.button {
+  border-radius: 4px;
+  background-color: #ca9e7b;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 20px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  float: right;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.modal {
+  font-family: Arial;
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-header {
+  padding: 2px 16px;
+  color: black;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  color: black;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #ca9e7b;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* About Page */
+.abt-main {
+  font-family: Arial;
+}
+
+.abt-col {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+.abt-row {
+  margin-top: 20px;
+}
+
+.abt-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.abt-col-2 {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+
+.abt-row-2 {
+  background-color: #ca9e7b;
+  margin-top: 40px;
+}
+.abt-row-2 hr{     
+  border:         none;
+  border-left:    1px solid hsla(200, 10%, 50%,100);
+  height:         100vh;
+  width:          1px;  
+  float: right;
+  position: absolute;
+}
+.abt-row-2:after {
+  content: "";
+  display: table;
+  clear: both;
+  background-color: #ca9e7b;
+
+}
+
+.abt-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #ca9e7b;
+  height: 300px;
+}
+
+/*Our Team Section */
+.team-body {
+  font-family: Arial;
+}
+
+
+.team-col {
+  float: left;
+  text-align: center;
+}
+
+.left, .right {
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
+}
+
+.team-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
