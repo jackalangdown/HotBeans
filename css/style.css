@@ -189,6 +189,7 @@ div.topnav a:hover:before, div.topnav a:hover:after
 }
 .jobs-body h1 {
   margin-bottom: -5px;
+  text-align: center;
 }
 .jobs-col {
     float: left;
