@@ -454,4 +454,38 @@ input[type=submit] {
   clear: both;
 }
 
+.team-img {
+  width: 150px;
+  height: 150px;
+  display: inline;
+  float: left;
+  margin-right: 10px;
 
+
+}
+
+.team-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+  padding: 16px;
+  background-color: #f1f1f1;
+  margin-top: 20px;
+  height: 200px;
+  text-align: left;
+}
+
+.team-card h2 {
+  margin-top: -4px;
+  display: inline;
+}
+.team-card h4 {
+  margin-top: -10px;
+  display: inline;
+}
+.team-card p {
+  margin-top: -2px;
+}
+
+.abt-col-2 a {
+  color: white;
+  text-decoration: nones;
+}
